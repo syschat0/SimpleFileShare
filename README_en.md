@@ -1,47 +1,32 @@
 # Simple File Share
 
-**Simple File Share** is a standalone file sharing service for local networks. Upload, manage, and share files with an Apple-inspired, photography-first design. It runs as a desktop app with an embedded server, and any device on the same network can access it through a web browser.
-
-> **Tested on**: Development, execution, and builds have been verified on **Windows 11**.
-
 [한국어 README](README.md)
 
 ---
 
-## ✨ Features
+## 🚀 Getting Started
 
-- **Apple-Inspired UI/UX**: Interface built on Apple design principles—edge-to-edge tiles, SF Pro typography, and a single Action Blue accent color.
-- **Drag & Drop Uploads**: Upload files by dragging them into the browser or desktop app window.
-- **Standalone Desktop App**: Distributed as a Pywebview-built `.exe`. End users do not need Python installed.
-- **Local Network Sharing**: Automatically hosts a web server reachable from any device on the same network.
-- **Real-Time System Logs**: Monitor server status, connections, and internal logs from the app UI.
-- **Admin Dashboard**: Configure port number, maximum upload size, admin password, and more.
+### 1. Download from Git
 
----
+[Git](https://git-scm.com/downloads) must be installed.
 
-## 🛠️ Technology Stack
+```bash
+git clone https://github.com/syschat0/SimpleFileShare.git
+cd SimpleFileShare
+```
 
-- **Backend**: Python 3.12, FastAPI, SQLAlchemy (SQLite), Uvicorn
-- **Frontend**: HTML5, Vanilla CSS (Apple design system), Vanilla JavaScript
-- **Desktop GUI**: Pywebview
-- **Packaging**: PyInstaller
+Without Git, download the repository as a ZIP from the GitHub page (**Code → Download ZIP**), extract it, and open the project folder.
 
----
-
-## 🚀 Quick Start (Windows — BAT Scripts)
-
-This project can be run and built on Windows using `.bat` scripts.
-
-### Prerequisites
+### 2. Prerequisites
 
 - Windows 11 (tested)
 - Python 3.12 or higher (install from [python.org](https://www.python.org/downloads/); check **Add to PATH**)
 
-### 1. Run in Development Mode — `run.bat`
+### 3. Run in Development Mode — `run.bat`
 
 Use this when developing and testing changes to the source code.
 
-1. Clone the repository and open the project root.
+1. Open the project root folder you downloaded above.
 2. Double-click `run.bat` or run it from Command Prompt:
 
    ```cmd
@@ -54,7 +39,7 @@ Use this when developing and testing changes to the source code.
 
 > On first run, if `config.json` is missing, it is created with port `8000` and the default admin password `admin`.
 
-### 2. Set Up Environment and Build — `build.bat`
+### 4. Set Up Environment and Build — `build.bat`
 
 Creates the virtual environment, installs dependencies, and builds a standalone `.exe` in one step.
 
@@ -87,13 +72,11 @@ After the build completes, double-click `dist\SimpleFileShare.exe` to run or dis
 
 ## 🛠️ Manual Setup (Development)
 
-To set up without BAT scripts, follow these steps.
+To set up without BAT scripts, complete [Download from Git](#1-download-from-git) first, then follow these steps.
 
-1. **Clone the repository and create a virtual environment**
+1. **Create a virtual environment**
 
    ```bash
-   git clone <your-repo-url>
-   cd SimpleFileShare
    python -m venv venv
    ```
 
@@ -114,6 +97,34 @@ To set up without BAT scripts, follow these steps.
    ```bash
    python run.py
    ```
+
+---
+
+## About
+
+**Simple File Share** is a standalone file sharing service for local networks. Upload, manage, and share files with an Apple-inspired, photography-first design. It runs as a desktop app with an embedded server, and any device on the same network can access it through a web browser.
+
+> **Tested on**: Development, execution, and builds have been verified on **Windows 11**.
+
+---
+
+## ✨ Features
+
+- **Apple-Inspired UI/UX**: Interface built on Apple design principles—edge-to-edge tiles, SF Pro typography, and a single Action Blue accent color.
+- **Drag & Drop Uploads**: Upload files by dragging them into the browser or desktop app window.
+- **Standalone Desktop App**: Distributed as a Pywebview-built `.exe`. End users do not need Python installed.
+- **Local Network Sharing**: Automatically hosts a web server reachable from any device on the same network.
+- **Real-Time System Logs**: Monitor server status, connections, and internal logs from the app UI.
+- **Admin Dashboard**: Configure port number, maximum upload size, admin password, and more.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Backend**: Python 3.12, FastAPI, SQLAlchemy (SQLite), Uvicorn
+- **Frontend**: HTML5, Vanilla CSS (Apple design system), Vanilla JavaScript
+- **Desktop GUI**: Pywebview
+- **Packaging**: PyInstaller
 
 ---
 
