@@ -4,6 +4,29 @@
 
 ---
 
+## About
+
+**Simple File Share** is a standalone file sharing service for local networks. Upload, manage, and share files with an Apple-inspired, photography-first design. It runs as a desktop app with an embedded server, and any device on the same network can access it through a web browser.
+
+**Screenshot**
+
+![Simple File Share running](capture_1.png)
+
+> **Tested on**: Development, execution, and builds have been verified on **Windows 11**.
+
+---
+
+## ✨ Features
+
+- **Apple-Inspired UI/UX**: Interface built on Apple design principles—edge-to-edge tiles, SF Pro typography, and a single Action Blue accent color.
+- **Drag & Drop Uploads**: Upload files by dragging them into the browser or desktop app window.
+- **Standalone Desktop App**: Distributed as a Pywebview-built `.exe`. End users do not need Python installed.
+- **Local Network Sharing**: Automatically hosts a web server reachable from any device on the same network.
+- **Real-Time System Logs**: Monitor server status, connections, and internal logs from the app UI.
+- **Admin Dashboard**: Configure port number, maximum upload size, admin password, and more.
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Download from Git
@@ -97,29 +120,6 @@ To set up without BAT scripts, complete [Download from Git](#1-download-from-git
    ```bash
    python run.py
    ```
-
----
-
-## About
-
-**Simple File Share** is a standalone file sharing service for local networks. Upload, manage, and share files with an Apple-inspired, photography-first design. It runs as a desktop app with an embedded server, and any device on the same network can access it through a web browser.
-
-**Screenshot**
-
-![Simple File Share running](capture_1.png)
-
-> **Tested on**: Development, execution, and builds have been verified on **Windows 11**.
-
----
-
-## ✨ Features
-
-- **Apple-Inspired UI/UX**: Interface built on Apple design principles—edge-to-edge tiles, SF Pro typography, and a single Action Blue accent color.
-- **Drag & Drop Uploads**: Upload files by dragging them into the browser or desktop app window.
-- **Standalone Desktop App**: Distributed as a Pywebview-built `.exe`. End users do not need Python installed.
-- **Local Network Sharing**: Automatically hosts a web server reachable from any device on the same network.
-- **Real-Time System Logs**: Monitor server status, connections, and internal logs from the app UI.
-- **Admin Dashboard**: Configure port number, maximum upload size, admin password, and more.
 
 ---
 
